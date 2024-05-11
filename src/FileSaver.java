@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class FileSaver {
 
-    private static final String FILE_PATH = "path_to_output_file";
+    private static final String FILE_PATH = "output.png";
 
     public static void saveFile(BufferedImage image){
         File file = new File(FILE_PATH);

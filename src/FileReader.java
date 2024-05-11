@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class FileReader {
 
-    private static final String FILE_PATH = "path_to_input_image";
+    private static final String FILE_PATH = "D:\\Java\\BoxBlurAlghoritm\\src\\plik.png";
 
     public static BufferedImage readImage(){
         try {
