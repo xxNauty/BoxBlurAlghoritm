@@ -5,14 +5,9 @@ import java.io.IOException;
 
 public class FileSaver {
 
-    private static final String FILE_PATH = "output.png";
+    private static final String FILE_PATH = "output.jpg";
 
-    public static void saveFile(BufferedImage image){
-        File file = new File(FILE_PATH);
-        try {
-            ImageIO.write(image, "png", file);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+    public static void saveFile(BufferedImage image) throws IOException {
+        ImageIO.write(image, "jpg", new File(FILE_PATH));
     }
 }
